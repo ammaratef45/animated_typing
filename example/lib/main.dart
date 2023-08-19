@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       .toList(),
                   onChanged: (v) {
                     setState(() {
-                      _color = v;
+                      _color = v!;
                     });
                   },
                   value: _color,
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Start'),
               onPressed: () {
                 _text = _controller.text;
